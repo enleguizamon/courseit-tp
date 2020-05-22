@@ -1,3 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box; 
+    font-family: Open Sans;
+    text-decoration: none;
+    margin: 0px 0px -10px 0px;
+    color: #FFFFFF;
+}
+
 body {
-    color: red; 
+  .wrapper {
+      background-color: #000000;
+      height: 100vw;
+      width: 100%;
+      .hero {
+          background-image: url('../assets/portada.png');
+          background-size: cover;
+          width: 1499px;
+          height: 843px;
+          left: -21px;
+          top: 0px;
+
+          .navbar {
+            width: 1440px;
+            height: 65px;
+            left: 0px;
+            top: 0px;  
+            background: rgba(0, 0, 0, 0.801218);    
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 29px;
+            position: fixed;
+            
+                .logo {
+                    width: 148.69px;
+                    height: 40px;
+                    margin-left: 81px;
+                    margin-right: 20px;
+                    margin-top: 15px; 
+                }
+
+                .nav {
+                    
+                    width: 58px;
+                    height: 29px;
+                    left: 317px;
+                    top: 20px;
+                    margin-left: 15px;
+                    
+                }
+            }
+
+            .original-courflix {
+                width: 344px;
+                height: 38px;
+                left: 78px;
+                top: 207px;
+               
+                .original-courflix-title {
+                    
+                    padding: 233px 0px 48px 87px;
+                }
+            }
+            
+            .title {
+                width: 530px;
+                height: 200px;
+                left: 74px;
+                top: 263px;
+                .black-summer {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 110px;
+                    line-height: 100px;
+                   
+                    margin: 237px 81px;
+                }
+            }
+
+            .button {
+                display: inline-block;
+                margin: 22px -57px -65px 83px;
+                height: 65px;
+                width: 182px;
+                text-align: center;
+                background-color: rgba(157, 151, 151, 0.541521);
+                border-radius: 9px;
+                padding: 20px 0px 0px 0px;          
+            }
+
+            .temp1 {
+                .see {
+                    width: 215px;
+                    height: 66px;
+                    left: 80px;
+                    top: 569px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 33px;
+                    
+                    margin: 67px 0px 0px 84px;
+                }
+                .sinopsis {
+                    width: 656px;
+                    width: 656px;
+                    height: 87px;
+                    left: 81px;
+                    top: 613px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 33px;
+                    margin: -5px 0px 0px 84px;
+                }
+            }
+
+            .series-wrapper {
+                .series-title {
+                margin: 90px 0px 0px 84px;
+                padding-bottom: 20px;
+                }
+                .series {
+
+                }
+
+            }
+        }
+    }
 }
