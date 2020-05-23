@@ -11,12 +11,12 @@
 body {
   .wrapper {
       background-color: #000000;
-      height: 100vw;
-      width: 100%;
+      min-height: 100vw;
+      width: 100vw;
       .hero {
           background-image: url('../assets/portada.png');
           background-size: cover;
-          width: 1499px;
+          width: 100%;
           height: 843px;
           left: -21px;
           top: 0px;
@@ -123,10 +123,23 @@ body {
                 padding-bottom: 20px;
                 }
                 .series {
+                    margin: 0px 0px 0px 81px;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    overflow-x: auto;
 
+                    .serie {
+                        margin-right: 16px;
+
+                         .progress-bar {
+                                .progress {
+                            }
+                        }
+                    }
                 }
-
             }
+           
         }
     }
 }
