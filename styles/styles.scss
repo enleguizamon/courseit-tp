@@ -37,7 +37,7 @@ body {
                 line-height: 29px;
                 position: fixed;
 
-                ul {
+                .links {
                     display: flex;
                     margin-top: 10px;
                     list-style: none;
@@ -60,119 +60,110 @@ body {
                     }
                 }
             }
-
-            .original-courflix {
-                width: 344px;
-                height: 38px;
-                left: 78px;
-                top: 207px;
-
-                .original-courflix-title {
-                    padding: 233px 0px 48px 87px;
-                }
-            }
-
-            .title {
-                width: 530px;
-                height: 200px;
-                left: 74px;
-                top: 263px;
-                .black-summer {
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 110px;
-                    line-height: 100px;
-
-                    margin: 237px 81px;
-                }
-            }
-            .buttons {
-            .button {
-                display: inline-block;
-                margin: 22px -57px -65px 83px;
-                height: 65px;
-                width: 182px;
-                text-align: center;
-                background-color: rgba(157, 151, 151, 0.541521);
-                border-radius: 9px;
-                padding: 20px 0px 0px 0px;
-            }
-            }
-
-            .temp1 {
-                .see {
-                    width: 215px;
-                    height: 66px;
-                    left: 80px;
-                    top: 569px;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 24px;
-                    line-height: 33px;
-
-                    margin: 67px 0px 0px 84px;
-                }
-                .sinopsis {
-                    width: 656px;
-                    width: 656px;
-                    height: 87px;
-                    left: 81px;
-                    top: 613px;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 24px;
-                    line-height: 33px;
-                    margin: -5px 0px 0px 84px;
-                }
-            }
-
-            .series-wrapper {
-                .series-title {
-                    margin: 90px 0px 0px 84px;
-                    padding-bottom: 20px;
-                }
-                .series {
-                    margin: 0px 0px 0px 81px;
-                    display: flex;
-                    width: 100%;
-                    height: 100%;
-                    overflow-x: auto;
-
-                    .serie {
-                        margin-right: 16px;
+            section {
+                .original-courflix {
+                    width: 344px;
+                    height: 38px;
+                    left: 78px;
+                    top: 207px;
+                    .original-courflix-title {
+                        padding: 233px 0px 48px 87px;
                     }
-
-                    .progress-bar {
-                        width: 250px;
-                        height: 10px;
-                        background-color: #333;
-                        margin: 15px auto;
-                        border-radius: 2px;
-                        &:hover {
-                            #progress1 {
-                            width: 80%;
+                }
+                .title {
+                    width: 530px;
+                    height: 200px;
+                    left: 74px;
+                    top: 263px;
+                    .black-summer {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 110px;
+                        line-height: 100px;
+                        margin: 237px 81px;
+                    }
+                }
+                .buttons {
+                    .button {
+                        display: inline-block;
+                        margin: 22px -57px -65px 83px;
+                        height: 65px;
+                        width: 182px;
+                        text-align: center;
+                        background-color: rgba(157, 151, 151, 0.541521);
+                        border-radius: 9px;
+                        padding: 20px 0px 0px 0px;
+                    }
+                }
+                .season1 {
+                    .watch {
+                        width: 215px;
+                        height: 66px;
+                        left: 80px;
+                        top: 569px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 33px;
+                        margin: 67px 0px 0px 84px;
+                    }
+                    .sinopsis {
+                        width: 656px;
+                        width: 656px;
+                        height: 87px;
+                        left: 81px;
+                        top: 613px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 33px;
+                        margin: -5px 0px 0px 84px;
+                    }
+                }
+                .series-wrapper {
+                    .series-title {
+                        margin: 90px 0px 0px 84px;
+                        padding-bottom: 20px;
+                    }
+                    .series {
+                        margin: 0px 0px 0px 81px;
+                        display: flex;
+                        width: 90%;
+                        height: 100%;
+                        .serie {
+                            margin-right: 10px;
+                        }
+                        .progress-bar {
+                            width: 250px;
+                            height: 10px;
+                            background-color: #333;
+                            margin: 15px auto;
+                            border-radius: 2px;
+                            &:hover {
+                                #progress1 {
+                                    width: 80%;
+                                }
+                                #progress2 {
+                                    width: 30%;
+                                }
+                                #progress3 {
+                                    width: 5%;
+                                }
+                                #progress4 {
+                                    width: 100%;
+                                }
+                                #progress5 {
+                                    width: 40%;
+                                }
                             }
-                            #progress2 {
-                                width: 30%;   
-                            }
-                            #progress3 {
-                                width: 5%;   
-                            }
-                            #progress4 {
-                                width: 100%;   
-                            }
-                            #progress5 {
-                                width: 40%;   
+                            .progress {
+                                width: 0;
+                                height: 100%;
+                                background-color: red;
+                                transition: width 2s ease-in-out;
                             }
                         }
                     }
-                        .progress {
-                            width: 0;
-                            height: 100%;
-                            background-color: red;
-                            transition: width 2s ease-in-out;
-                        }
-                   
                 }
             }
         }

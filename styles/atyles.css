@@ -55,29 +55,29 @@ body .wrapper .hero .header .links .link-wrapper .link {
 body .wrapper .hero .header .links .link-wrapper .link:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-body .wrapper .hero section .original-courflix {
+body .wrapper .hero section #section1 .original-courflix {
   width: 344px;
   height: 38px;
   left: 78px;
   top: 207px;
 }
-body .wrapper .hero section .original-courflix .original-courflix-title {
+body .wrapper .hero section #section1 .original-courflix .original-courflix-title {
   padding: 233px 0px 48px 87px;
 }
-body .wrapper .hero section .title {
+body .wrapper .hero section #section1 .title {
   width: 530px;
   height: 200px;
   left: 74px;
   top: 263px;
 }
-body .wrapper .hero section .title .black-summer {
+body .wrapper .hero section #section1 .title .black-summer {
   font-style: normal;
   font-weight: bold;
   font-size: 110px;
   line-height: 100px;
   margin: 237px 81px;
 }
-body .wrapper .hero section .buttons .button {
+body .wrapper .hero section #section1 .buttons .button {
   display: inline-block;
   margin: 22px -57px -65px 83px;
   height: 65px;
@@ -87,7 +87,7 @@ body .wrapper .hero section .buttons .button {
   border-radius: 9px;
   padding: 20px 0px 0px 0px;
 }
-body .wrapper .hero section .season1 .watch {
+body .wrapper .hero section #section1 .season1 .watch {
   width: 215px;
   height: 66px;
   left: 80px;
@@ -97,8 +97,9 @@ body .wrapper .hero section .season1 .watch {
   font-size: 24px;
   line-height: 33px;
   margin: 67px 0px 0px 84px;
+  background-color: red;
 }
-body .wrapper .hero section .season1 .sinopsis {
+body .wrapper .hero section #section1 .season1 .sinopsis {
   width: 656px;
   width: 656px;
   height: 87px;
@@ -110,46 +111,46 @@ body .wrapper .hero section .season1 .sinopsis {
   line-height: 33px;
   margin: -5px 0px 0px 84px;
 }
-body .wrapper .hero section .series-wrapper .series-title {
+body .wrapper .hero section #section2 .series-wrapper .series-title {
   margin: 90px 0px 0px 84px;
   padding-bottom: 20px;
 }
-body .wrapper .hero section .series-wrapper .series {
+body .wrapper .hero section #section2 .series-wrapper .series {
   margin: 0px 0px 0px 81px;
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
-body .wrapper .hero section .series-wrapper .series .serie {
-  margin-right: 10px;
+body .wrapper .hero section #section2 .series-wrapper .series .serie {
+  margin-right: 16px;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar {
   width: 250px;
   height: 10px;
   background-color: #333;
   margin: 15px auto;
   border-radius: 2px;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress1 {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar:hover #progress1 {
   width: 80%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress2 {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar:hover #progress2 {
   width: 30%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress3 {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar:hover #progress3 {
   width: 5%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress4 {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar:hover #progress4 {
   width: 100%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress5 {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar:hover #progress5 {
   width: 40%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar .progress {
+body .wrapper .hero section #section2 .series-wrapper .series .progress-bar .progress {
   width: 0;
   height: 100%;
   background-color: red;
   transition: width 2s ease-in-out;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=atyles.css.map */
