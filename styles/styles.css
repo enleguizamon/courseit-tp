@@ -13,7 +13,7 @@ html {
 
 body .wrapper {
   background-color: #000000;
-  min-height: 100vw;
+  min-height: 130vw;
   min-width: 100vw;
 }
 body .wrapper .hero {
@@ -123,6 +123,34 @@ body .wrapper .hero .series-wrapper .series {
 }
 body .wrapper .hero .series-wrapper .series .serie {
   margin-right: 16px;
+}
+body .wrapper .hero .series-wrapper .series .progress-bar {
+  width: 250px;
+  height: 10px;
+  background-color: #333;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+body .wrapper .hero .series-wrapper .series .progress-bar:hover #progress1 {
+  width: 80%;
+}
+body .wrapper .hero .series-wrapper .series .progress-bar:hover #progress2 {
+  width: 30%;
+}
+body .wrapper .hero .series-wrapper .series .progress-bar:hover #progress3 {
+  width: 5%;
+}
+body .wrapper .hero .series-wrapper .series .progress-bar:hover #progress4 {
+  width: 100%;
+}
+body .wrapper .hero .series-wrapper .series .progress-bar:hover #progress5 {
+  width: 40%;
+}
+body .wrapper .hero .series-wrapper .series .progress {
+  width: 0;
+  height: 100%;
+  background-color: red;
+  transition: width 2s ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -15,7 +15,7 @@ html {
 body {
     .wrapper {
         background-color: #000000;
-        min-height: 100vw;
+        min-height: 130vw;
         min-width: 100vw;
         .hero {
             background-image: url("../assets/portada.png");
@@ -140,12 +140,39 @@ body {
 
                     .serie {
                         margin-right: 16px;
+                    }
 
-                        .progress-bar {
-                            .progress {
+                    .progress-bar {
+                        width: 250px;
+                        height: 10px;
+                        background-color: #333;
+                        margin: 15px auto;
+                        border-radius: 2px;
+                        &:hover {
+                            #progress1 {
+                            width: 80%;
+                            }
+                            #progress2 {
+                                width: 30%;   
+                            }
+                            #progress3 {
+                                width: 5%;   
+                            }
+                            #progress4 {
+                                width: 100%;   
+                            }
+                            #progress5 {
+                                width: 40%;   
                             }
                         }
                     }
+                        .progress {
+                            width: 0;
+                            height: 100%;
+                            background-color: red;
+                            transition: width 2s ease-in-out;
+                        }
+                   
                 }
             }
         }
