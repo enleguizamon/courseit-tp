@@ -35,6 +35,7 @@ body .wrapper .hero .header {
   font-size: 21px;
   line-height: 29px;
   position: fixed;
+  z-index: 1;
 }
 body .wrapper .hero .header .links {
   display: flex;
