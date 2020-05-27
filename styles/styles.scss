@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
 
+$tablet-breakpoint: 600px;
+$mobile-breakpoint: 480px;
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,6 +23,7 @@ body {
         .hero {
             background-image: url("../assets/portada.png");
             background-size: cover;
+            background-position: center;
             width: 100%;
             height: 843px;
             left: -21px;
@@ -38,6 +42,10 @@ body {
                 position: fixed;
                 z-index: 1;
 
+                .icon {
+                    margin-top: 10px;
+                    //display: none;
+                }
                 .links {
                     display: flex;
                     margin-top: 10px;
@@ -48,12 +56,13 @@ body {
                         margin-left: 30px;
                         margin-right: 50px;
                         margin-top: -5px;
+                    
                     }
                     .link-wrapper {
                         .link {
                             display: inline-block;
                             padding: 10px;
-
+                           
                             &:hover {
                                 background-color: rgba(0, 0, 0, 0.3);
                             }
@@ -69,6 +78,9 @@ body {
                     top: 207px;
                     .original-courflix-title {
                         padding: 233px 0px 48px 87px;
+                        @media(max-width: $tablet-breakpoint) {
+                            display: none;
+                        }
                     }
                 }
                 .title {
@@ -76,12 +88,23 @@ body {
                     height: 200px;
                     left: 74px;
                     top: 263px;
+                    @media(max-width: $tablet-breakpoint) {
+                        width: 4000px;
+                        height: 100px;
+                        left: 13px;
+                        top: 123px;
+                    }
                     .black-summer {
                         font-style: normal;
                         font-weight: bold;
                         font-size: 110px;
                         line-height: 100px;
-                        margin: 237px 81px;
+                        margin: 237px 75px;
+                        @media(max-width: $tablet-breakpoint) {
+                        font-size: 50px;
+                        line-height: 33px;
+                        margin: 237px 30px;
+                    }
                     }
                 }
                 .buttons {
@@ -94,6 +117,12 @@ body {
                         background-color: rgba(157, 151, 151, 0.541521);
                         border-radius: 9px;
                         padding: 20px 0px 0px 0px;
+                        @media(max-width: $tablet-breakpoint) {
+                            height: 50px;
+                            width: 190px;
+                            margin: 0px -17px -65px 32px;
+                            padding: 10px 0px 0px 0px;
+                        }
                     }
                 }
                 .season1 {
@@ -107,6 +136,9 @@ body {
                         font-size: 24px;
                         line-height: 33px;
                         margin: 67px 0px 0px 84px;
+                        @media(max-width: $tablet-breakpoint) {
+                            display: none;
+                        }
                     }
                     .sinopsis {
                         width: 656px;
@@ -119,6 +151,9 @@ body {
                         font-size: 24px;
                         line-height: 33px;
                         margin: -5px 0px 0px 84px;
+                        @media(max-width: $tablet-breakpoint) {
+                            display: none;
+                        }
                     }
                 }
                 .series-wrapper {

@@ -19,6 +19,7 @@ body .wrapper {
 body .wrapper .hero {
   background-image: url("../assets/portada.png");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 843px;
   left: -21px;
@@ -36,6 +37,9 @@ body .wrapper .hero .header {
   line-height: 29px;
   position: fixed;
   z-index: 1;
+}
+body .wrapper .hero .header .icon {
+  margin-top: 10px;
 }
 body .wrapper .hero .header .links {
   display: flex;
@@ -65,18 +69,38 @@ body .wrapper .hero section .original-courflix {
 body .wrapper .hero section .original-courflix .original-courflix-title {
   padding: 233px 0px 48px 87px;
 }
+@media (max-width: 600px) {
+  body .wrapper .hero section .original-courflix .original-courflix-title {
+    display: none;
+  }
+}
 body .wrapper .hero section .title {
   width: 530px;
   height: 200px;
   left: 74px;
   top: 263px;
 }
+@media (max-width: 600px) {
+  body .wrapper .hero section .title {
+    width: 4000px;
+    height: 100px;
+    left: 13px;
+    top: 123px;
+  }
+}
 body .wrapper .hero section .title .black-summer {
   font-style: normal;
   font-weight: bold;
   font-size: 110px;
   line-height: 100px;
-  margin: 237px 81px;
+  margin: 237px 75px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .title .black-summer {
+    font-size: 50px;
+    line-height: 33px;
+    margin: 237px 30px;
+  }
 }
 body .wrapper .hero section .buttons .button {
   display: inline-block;
@@ -87,6 +111,14 @@ body .wrapper .hero section .buttons .button {
   background-color: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
   padding: 20px 0px 0px 0px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .buttons .button {
+    height: 50px;
+    width: 190px;
+    margin: 0px -17px -65px 32px;
+    padding: 10px 0px 0px 0px;
+  }
 }
 body .wrapper .hero section .season1 .watch {
   width: 215px;
@@ -99,6 +131,11 @@ body .wrapper .hero section .season1 .watch {
   line-height: 33px;
   margin: 67px 0px 0px 84px;
 }
+@media (max-width: 600px) {
+  body .wrapper .hero section .season1 .watch {
+    display: none;
+  }
+}
 body .wrapper .hero section .season1 .sinopsis {
   width: 656px;
   width: 656px;
@@ -110,6 +147,11 @@ body .wrapper .hero section .season1 .sinopsis {
   font-size: 24px;
   line-height: 33px;
   margin: -5px 0px 0px 84px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .season1 .sinopsis {
+    display: none;
+  }
 }
 body .wrapper .hero section .series-wrapper .series-title {
   margin: 90px 0px 0px 84px;
