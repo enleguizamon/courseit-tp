@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Open Sans;
+  text-decoration: none;
+  margin: 0px 0px -10px 0px;
+  color: #ffffff;
+}
+
+body .wrapper {
+  background-color: #000000;
+  min-height: 90vw;
+  min-width: 100vw;
+}
+body .wrapper .hero {
+  background-image: url("../assets/breakingbad04.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 843px;
+  left: -21px;
+  top: 0px;
+}
+body .wrapper .hero .header {
+  width: 1440px;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.801218);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+  position: fixed;
+  z-index: 1;
+}
+body .wrapper .hero .header .links {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+}
+body .wrapper .hero .header .links .logo {
+  width: 148.69px;
+  height: 40px;
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-top: -5px;
+}
+body .wrapper .hero .header .links .link-wrapper .link {
+  display: inline-block;
+  padding: 10px;
+}
+body .wrapper .hero .header .links .link-wrapper .link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .wrapper .hero section .img-wrapper .logo-BB {
+  width: 345px;
+  height: 345px;
+  margin: 50px 0px -25px 75px;
+}
+body .wrapper .hero section .description {
+  width: 530px;
+  left: 74px;
+  top: 263px;
+  margin-left: 75px;
+}
+body .wrapper .hero section .description .percentage {
+  color: #009C04;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 15px;
+}
+body .wrapper .hero section .description .year {
+  margin-right: 15px;
+}
+body .wrapper .hero section .description .audience {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40px;
+  padding-left: 5px;
+}
+body .wrapper .hero section .description .season {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 15px;
+}
+body .wrapper .hero section .click-buttons {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+body .wrapper .hero section .click-buttons .buttons .button {
+  display: inline-block;
+  margin: 22px -20px -65px 30px;
+  height: 65px;
+  width: 182px;
+  text-align: center;
+  background-color: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  padding: 20px 0px 0px 0px;
+  font-size: 1.2em;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .click-buttons .buttons .button {
+    height: 50px;
+    width: 190px;
+    margin: 0px -17px -65px 32px;
+    padding: 10px 0px 0px 0px;
+  }
+}
+body .wrapper .hero section .click-buttons .buttons .reproducir {
+  background-color: #ED0A1D;
+}
+body .wrapper .hero section .click-buttons .like {
+  width: 300px;
+  margin: 30px 0px 0px 55px;
+  font-size: 30px;
+}
+body .wrapper .hero section .click-buttons .like .hand {
+  display: flex;
+}
+body .wrapper .hero section .click-buttons .like .hand .fa.fa-thumbs-o-up {
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin-top: 5px;
+}
+body .wrapper .hero section .click-buttons .like .hand .fa.fa-thumbs-o-down {
+  margin-left: 40px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  margin-left: 53px;
+  margin-top: -20px;
+  padding: 4px;
+}
+body .wrapper .hero section .click-buttons .like .hand .fa:hover {
+  background-color: black;
+}
+body .wrapper .hero section .season1 .watch {
+  width: 215px;
+  height: 66px;
+  left: 80px;
+  top: 569px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 67px 0px 0px 84px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .season1 .watch {
+    display: none;
+  }
+}
+body .wrapper .hero section .season1 .sinopsis {
+  width: 656px;
+  width: 550px;
+  height: 87px;
+  left: 81px;
+  top: 613px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 90px 0px 0px 75px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .season1 .sinopsis {
+    display: none;
+  }
+}
+body .wrapper .hero section .series-wrapper .series-title {
+  margin: 90px 0px 0px 84px;
+  padding-bottom: 20px;
+}
+body .wrapper .hero section .series-wrapper .series {
+  margin: 0px 0px 0px 81px;
+  display: flex;
+  width: 90%;
+  height: 100%;
+}
+body .wrapper .hero section .series-wrapper .series .serie {
+  margin-right: 10px;
+  height: 300px;
+  width: 400px;
+}
+
+/*# sourceMappingURL=styles-detalle.css.map */
