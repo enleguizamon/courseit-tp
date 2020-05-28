@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 $tablet-breakpoint: 600px;
 $mobile-breakpoint: 480px;
@@ -9,16 +9,15 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    margin: 0px 0px -10px 0px;
     color: #ffffff;
 }
 
 body {
     .wrapper {
         background-color: #000000;
-        min-height: 130vw;
+        min-height: 290vh;
         min-width: 100vw;
         .hero {
             background-image: url("../assets/portada.png");
@@ -44,6 +43,7 @@ body {
 
                 .icon {
                     margin-top: 10px;
+                    margin-left: 25px;
                     //display: none;
                 }
                 .links {
@@ -51,11 +51,10 @@ body {
                     margin-top: 10px;
                     list-style: none;
                     .logo {
-                        width: 148.69px;
+                        width: 145.69px;
                         height: 40px;
                         margin-left: 30px;
                         margin-right: 50px;
-                        margin-top: -5px;
                     
                     }
                     .link-wrapper {
@@ -76,7 +75,9 @@ body {
                     height: 38px;
                     left: 78px;
                     top: 207px;
+                    font-weight: bold;
                     .original-courflix-title {
+                        font-size: 1.5rem;
                         padding: 233px 0px 48px 87px;
                         @media(max-width: $tablet-breakpoint) {
                             display: none;
@@ -116,7 +117,8 @@ body {
                         text-align: center;
                         background-color: rgba(157, 151, 151, 0.541521);
                         border-radius: 9px;
-                        padding: 20px 0px 0px 0px;
+                        padding: 22px 0px 0px 0px;
+                        font-size: 1.2rem;
                         @media(max-width: $tablet-breakpoint) {
                             height: 50px;
                             width: 190px;
@@ -160,6 +162,9 @@ body {
                     .series-title {
                         margin: 90px 0px 0px 84px;
                         padding-bottom: 20px;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        line-height: 33px;
                     }
                     .series {
                         margin: 0px 0px 0px 81px;

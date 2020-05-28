@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  margin: 0px 0px -10px 0px;
   color: #ffffff;
 }
 
 body .wrapper {
   background-color: #000000;
-  min-height: 130vw;
+  min-height: 290vh;
   min-width: 100vw;
 }
 body .wrapper .hero {
@@ -40,6 +38,7 @@ body .wrapper .hero .header {
 }
 body .wrapper .hero .header .icon {
   margin-top: 10px;
+  margin-left: 25px;
 }
 body .wrapper .hero .header .links {
   display: flex;
@@ -47,11 +46,10 @@ body .wrapper .hero .header .links {
   list-style: none;
 }
 body .wrapper .hero .header .links .logo {
-  width: 148.69px;
+  width: 145.69px;
   height: 40px;
   margin-left: 30px;
   margin-right: 50px;
-  margin-top: -5px;
 }
 body .wrapper .hero .header .links .link-wrapper .link {
   display: inline-block;
@@ -65,8 +63,10 @@ body .wrapper .hero section .original-courflix {
   height: 38px;
   left: 78px;
   top: 207px;
+  font-weight: bold;
 }
 body .wrapper .hero section .original-courflix .original-courflix-title {
+  font-size: 1.5rem;
   padding: 233px 0px 48px 87px;
 }
 @media (max-width: 600px) {
@@ -110,7 +110,8 @@ body .wrapper .hero section .buttons .button {
   text-align: center;
   background-color: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
-  padding: 20px 0px 0px 0px;
+  padding: 22px 0px 0px 0px;
+  font-size: 1.2rem;
 }
 @media (max-width: 600px) {
   body .wrapper .hero section .buttons .button {
@@ -156,6 +157,9 @@ body .wrapper .hero section .season1 .sinopsis {
 body .wrapper .hero section .series-wrapper .series-title {
   margin: 90px 0px 0px 84px;
   padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 33px;
 }
 body .wrapper .hero section .series-wrapper .series {
   margin: 0px 0px 0px 81px;
