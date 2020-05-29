@@ -31,3 +31,11 @@ $(document).ready(function(){
         ]
     });
   });
+
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.onclick= function() {
+  console.log("onclik funciona")
+  mainNav.classList.toggle("active");
+};

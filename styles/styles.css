@@ -35,25 +35,73 @@ body .wrapper .hero .header {
   line-height: 29px;
   position: fixed;
   z-index: 1;
+  display: flex;
 }
 body .wrapper .hero .header .icon {
+  margin: 0px -10px 0px 15px;
+  width: 45px;
+  display: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+}
+@media (max-width: 890px) {
+  body .wrapper .hero .header .icon {
+    display: block;
+  }
+}
+body .wrapper .hero .header .courflix-wrapper {
   margin-top: 10px;
-  margin-left: 25px;
+}
+body .wrapper .hero .header .courflix-wrapper .logo {
+  width: 145.69px;
+  height: 45px;
+  margin-left: 75px;
+  margin-right: 50px;
+  margin-top: 3px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero .header .courflix-wrapper .logo {
+    margin-left: 30px;
+  }
 }
 body .wrapper .hero .header .links {
   display: flex;
   margin-top: 10px;
   list-style: none;
 }
-body .wrapper .hero .header .links .logo {
-  width: 145.69px;
-  height: 40px;
-  margin-left: 30px;
-  margin-right: 50px;
+body .wrapper .hero .header .links.active {
+  display: flex;
+}
+@media (max-width: 940px) {
+  body .wrapper .hero .header .links {
+    margin-left: -50px;
+  }
+}
+@media (max-width: 890px) {
+  body .wrapper .hero .header .links {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 700px;
+    background-color: black;
+    margin: 65px 0px 0px -321px;
+    padding: 0px 0px 0px 5px;
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  body .wrapper .hero .header .links {
+    margin: 65px 0px 0px -276px;
+  }
 }
 body .wrapper .hero .header .links .link-wrapper .link {
   display: inline-block;
   padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  body .wrapper .hero .header .links .link-wrapper .link {
+    margin-bottom: 15px;
+  }
 }
 body .wrapper .hero .header .links .link-wrapper .link:hover {
   background-color: rgba(0, 0, 0, 0.3);

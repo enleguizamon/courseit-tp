@@ -9,7 +9,7 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     color: #ffffff;
 }
@@ -40,28 +40,63 @@ body {
                 line-height: 29px;
                 position: fixed;
                 z-index: 1;
+                display: flex;
 
                 .icon {
+                    margin: 0px -10px 0px 15px;
+                    width: 45px;
+                    display: none;
+                    font-size: 2rem;
+                    background-color: transparent;
+                    border: none;
+                    @media (max-width: 890px) {
+                        display: block;
+                    }
+                }
+                .courflix-wrapper {
                     margin-top: 10px;
-                    margin-left: 25px;
-                    //display: none;
+                    .logo {
+                        width: 145.69px;
+                        height: 45px;
+                        margin-left: 75px;
+                        margin-right: 50px;
+                        margin-top: 3px;
+                        @media (max-width: $tablet-breakpoint) {
+                            margin-left: 30px;
+                        }
+                    }
                 }
                 .links {
                     display: flex;
                     margin-top: 10px;
                     list-style: none;
-                    .logo {
-                        width: 145.69px;
-                        height: 40px;
-                        margin-left: 30px;
-                        margin-right: 50px;
-                    
+
+                    &.active {
+                        display: flex;
                     }
+                    @media (max-width: 940px) {
+                        margin-left: -50px;
+                    }
+                    @media (max-width: 890px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        height: 700px;
+                        background-color: black;
+                        margin: 65px 0px 0px -321px;
+                        padding: 0px 0px 0px 5px;
+                        display: none;
+                    }
+                    @media (max-width: $tablet-breakpoint) {
+                        margin: 65px 0px 0px -276px;
+                    }
+
                     .link-wrapper {
                         .link {
                             display: inline-block;
                             padding: 10px;
-                           
+                            @media screen and (max-width: $tablet-breakpoint) {
+                                margin-bottom: 15px;
+                            }
                             &:hover {
                                 background-color: rgba(0, 0, 0, 0.3);
                             }
@@ -79,7 +114,7 @@ body {
                     .original-courflix-title {
                         font-size: 1.5rem;
                         padding: 233px 0px 48px 87px;
-                        @media(max-width: $tablet-breakpoint) {
+                        @media (max-width: $tablet-breakpoint) {
                             display: none;
                         }
                     }
@@ -89,7 +124,7 @@ body {
                     height: 200px;
                     left: 74px;
                     top: 263px;
-                    @media(max-width: $tablet-breakpoint) {
+                    @media (max-width: $tablet-breakpoint) {
                         width: 4000px;
                         height: 100px;
                         left: 13px;
@@ -101,11 +136,11 @@ body {
                         font-size: 110px;
                         line-height: 100px;
                         margin: 237px 75px;
-                        @media(max-width: $tablet-breakpoint) {
-                        font-size: 50px;
-                        line-height: 33px;
-                        margin: 237px 30px;
-                    }
+                        @media (max-width: $tablet-breakpoint) {
+                            font-size: 50px;
+                            line-height: 33px;
+                            margin: 237px 30px;
+                        }
                     }
                 }
                 .buttons {
@@ -119,7 +154,7 @@ body {
                         border-radius: 9px;
                         padding: 22px 0px 0px 0px;
                         font-size: 1.2rem;
-                        @media(max-width: $tablet-breakpoint) {
+                        @media (max-width: $tablet-breakpoint) {
                             height: 50px;
                             width: 190px;
                             margin: 0px -17px -65px 32px;
@@ -138,7 +173,7 @@ body {
                         font-size: 24px;
                         line-height: 33px;
                         margin: 67px 0px 0px 84px;
-                        @media(max-width: $tablet-breakpoint) {
+                        @media (max-width: $tablet-breakpoint) {
                             display: none;
                         }
                     }
@@ -153,7 +188,7 @@ body {
                         font-size: 24px;
                         line-height: 33px;
                         margin: -5px 0px 0px 84px;
-                        @media(max-width: $tablet-breakpoint) {
+                        @media (max-width: $tablet-breakpoint) {
                             display: none;
                         }
                     }

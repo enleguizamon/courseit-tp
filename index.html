@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Courflix</title>
-  <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">-->
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" type="text/css" href="./styles/slick-theme.css" />
@@ -18,11 +17,11 @@
     <div class="hero">
 
       <header class="header">
-        <ul class="links">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-          <li class="link-wrapper"><a href="#" class="link"><img
-                src="https://fontmeme.com/permalink/200522/179c0a6e7157b4da01ae6c279a5001c6.png" class="logo"
-                alt="netflix-font" border="0"></a></li>
+        <button href="#" class="icon" id="js-navbar-toggle"><i class="fa fa-bars"></i></button>
+        <a href="#" class="courflix-wrapper"><img src="https://fontmeme.com/permalink/200522/179c0a6e7157b4da01ae6c279a5001c6.png"
+            class="logo" alt="netflix-font" border="0"></a>
+
+        <ul class="links active" id="js-menu">
           <li class="link-wrapper"><a href="#section1" class="link">Inicio</a></li>
           <li class="link-wrapper"><a href="#section2" class="link">Series</a></li>
           <li class="link-wrapper"><a href="#" class="link">Películas</a></li>
