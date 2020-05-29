@@ -150,9 +150,9 @@ body .wrapper .hero section .title .black-summer {
 }
 @media (max-width: 600px) {
   body .wrapper .hero section .title .black-summer {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 33px;
-    margin: 237px 30px;
+    margin: 237px 15px;
   }
 }
 body .wrapper .hero section .title .description {
@@ -162,7 +162,7 @@ body .wrapper .hero section .title .description {
   body .wrapper .hero section .title .description {
     font-size: 1.2rem;
     margin-top: -210px;
-    margin-left: 34px;
+    margin-left: 22px;
     display: block;
   }
 }
@@ -180,8 +180,8 @@ body .wrapper .hero section .buttons .button {
 @media (max-width: 600px) {
   body .wrapper .hero section .buttons .button {
     height: 50px;
-    width: 190px;
-    margin: 0px -17px -65px 32px;
+    width: 170px;
+    margin: 0px -17px -65px 20px;
     padding: 10px 0px 0px 0px;
   }
 }
