@@ -17,8 +17,8 @@ html {
 body {
     .wrapper {
         background-color: #000000;
-        min-height: 290vh;
-        min-width: 100vw;
+        height: 290vh;
+        width: 100vw;
         .hero {
             background-image: url("../assets/portada.png");
             background-size: cover;
@@ -27,6 +27,9 @@ body {
             height: 843px;
             left: -21px;
             top: 0px;
+            @media (max-width: $tablet-breakpoint) {
+                height: 540px;
+            }
 
             .header {
                 width: 1440px;
@@ -142,6 +145,15 @@ body {
                             margin: 237px 30px;
                         }
                     }
+                    .description {
+                        display: none;
+                        @media (max-width: $tablet-breakpoint) {
+                            font-size: 1.2rem;
+                            margin-top: -210px;
+                            margin-left: 34px;
+                            display: block;
+                        }
+                    }
                 }
                 .buttons {
                     .button {
@@ -194,6 +206,9 @@ body {
                     }
                 }
                 .series-wrapper {
+                    @media (max-width: $tablet-breakpoint) {
+                        margin-left: -45px;
+                    }
                     .series-title {
                         margin: 90px 0px 0px 84px;
                         padding-bottom: 20px;
@@ -206,9 +221,6 @@ body {
                         display: flex;
                         width: 90%;
                         height: 100%;
-                        .serie {
-                            margin-right: 10px;
-                        }
                         .progress-bar {
                             width: 250px;
                             height: 10px;

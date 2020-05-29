@@ -5,6 +5,15 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 2000,
         responsive: [
+          {
+            breakpoint: 1124,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
             {
               breakpoint: 800,
               settings: {

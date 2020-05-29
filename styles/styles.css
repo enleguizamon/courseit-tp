@@ -11,8 +11,8 @@ html {
 
 body .wrapper {
   background-color: #000000;
-  min-height: 290vh;
-  min-width: 100vw;
+  height: 290vh;
+  width: 100vw;
 }
 body .wrapper .hero {
   background-image: url("../assets/portada.png");
@@ -22,6 +22,11 @@ body .wrapper .hero {
   height: 843px;
   left: -21px;
   top: 0px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero {
+    height: 540px;
+  }
 }
 body .wrapper .hero .header {
   width: 1440px;
@@ -150,6 +155,17 @@ body .wrapper .hero section .title .black-summer {
     margin: 237px 30px;
   }
 }
+body .wrapper .hero section .title .description {
+  display: none;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .title .description {
+    font-size: 1.2rem;
+    margin-top: -210px;
+    margin-left: 34px;
+    display: block;
+  }
+}
 body .wrapper .hero section .buttons .button {
   display: inline-block;
   margin: 22px -57px -65px 83px;
@@ -202,6 +218,11 @@ body .wrapper .hero section .season1 .sinopsis {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  body .wrapper .hero section .series-wrapper {
+    margin-left: -45px;
+  }
+}
 body .wrapper .hero section .series-wrapper .series-title {
   margin: 90px 0px 0px 84px;
   padding-bottom: 20px;
@@ -214,9 +235,6 @@ body .wrapper .hero section .series-wrapper .series {
   display: flex;
   width: 90%;
   height: 100%;
-}
-body .wrapper .hero section .series-wrapper .series .serie {
-  margin-right: 10px;
 }
 body .wrapper .hero section .series-wrapper .series .progress-bar {
   width: 250px;
