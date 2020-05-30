@@ -32,8 +32,6 @@ body {
             .header {
                 width: 1440px;
                 height: 65px;
-                left: 0px;
-                top: 0px;
                 background: rgba(0, 0, 0, 0.801218);
                 font-style: normal;
                 font-weight: bold;
@@ -75,7 +73,7 @@ body {
                     &.active {
                         display: flex;
                     }
-                    @media (max-width: 940px) {
+                    @media (max-width: 990px) {
                         margin-left: -50px;
                     }
                     @media (max-width: 890px) {
@@ -95,12 +93,18 @@ body {
                         .link {
                             display: inline-block;
                             padding: 10px;
-                            @media screen and (max-width: $tablet-breakpoint) {
-                                margin-bottom: 15px;
+                            @media screen and (max-width: 890px) {
+                                margin-top: 30px;
                             }
                             &:hover {
                                 background-color: rgba(0, 0, 0, 0.3);
                             }
+                            &.mq {
+                                @media screen and (max-width: 890px) {
+                                    font-weight: lighter;
+                                }
+                        }
+                       
                         }
                     }
                 }
@@ -140,7 +144,7 @@ body {
                         @media (max-width: $tablet-breakpoint) {
                             font-size: 45px;
                             line-height: 33px;
-                            margin: 237px 15px;
+                            margin: 237px 20px;
                         }
                     }
                     .description {
@@ -148,7 +152,7 @@ body {
                         @media (max-width: $tablet-breakpoint) {
                             font-size: 1.2rem;
                             margin-top: -210px;
-                            margin-left: 22px;
+                            margin-left: 25px;
                             display: block;
                         }
                     }
@@ -167,7 +171,7 @@ body {
                         @media (max-width: $tablet-breakpoint) {
                             height: 50px;
                             width: 170px;
-                            margin: 0px -17px -65px 20px;
+                            margin: 0px -17px -65px 22px;
                             padding: 10px 0px 0px 0px;
                         }
                     }
@@ -223,9 +227,9 @@ body {
                             width: 250px;
                             height: 10px;
                             background-color: #333;
-                            margin: 15px auto;
+                            margin-top: 10px;
+                            margin-left: 45px;
                             border-radius: 2px;
-                            &:hover {
                                 #progress1 {
                                     width: 80%;
                                 }
@@ -241,7 +245,6 @@ body {
                                 #progress5 {
                                     width: 40%;
                                 }
-                            }
                             .progress {
                                 width: 0;
                                 height: 100%;

@@ -13,8 +13,8 @@ html {
 
 body .wrapper {
   background-color: #000000;
-  min-height: 190vw;
-  min-width: 100vw;
+  min-height: 155vh;
+  max-width: 100vw;
 }
 body .wrapper .hero {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11)), url("../assets/breakingbad04.png");
@@ -108,7 +108,7 @@ body .wrapper .hero section .description {
 @media (max-width: 600px) {
   body .wrapper .hero section .description {
     margin-top: 60px;
-    margin-left: 20px;
+    margin-left: 25px;
   }
 }
 body .wrapper .hero section .description .percentage {

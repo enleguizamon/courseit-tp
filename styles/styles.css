@@ -31,8 +31,6 @@ body .wrapper .hero {
 body .wrapper .hero .header {
   width: 1440px;
   height: 65px;
-  left: 0px;
-  top: 0px;
   background: rgba(0, 0, 0, 0.801218);
   font-style: normal;
   font-weight: bold;
@@ -78,7 +76,7 @@ body .wrapper .hero .header .links {
 body .wrapper .hero .header .links.active {
   display: flex;
 }
-@media (max-width: 940px) {
+@media (max-width: 990px) {
   body .wrapper .hero .header .links {
     margin-left: -50px;
   }
@@ -103,13 +101,18 @@ body .wrapper .hero .header .links .link-wrapper .link {
   display: inline-block;
   padding: 10px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 890px) {
   body .wrapper .hero .header .links .link-wrapper .link {
-    margin-bottom: 15px;
+    margin-top: 30px;
   }
 }
 body .wrapper .hero .header .links .link-wrapper .link:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 890px) {
+  body .wrapper .hero .header .links .link-wrapper .link.mq {
+    font-weight: lighter;
+  }
 }
 body .wrapper .hero section .original-courflix {
   width: 344px;
@@ -152,7 +155,7 @@ body .wrapper .hero section .title .black-summer {
   body .wrapper .hero section .title .black-summer {
     font-size: 45px;
     line-height: 33px;
-    margin: 237px 15px;
+    margin: 237px 20px;
   }
 }
 body .wrapper .hero section .title .description {
@@ -162,7 +165,7 @@ body .wrapper .hero section .title .description {
   body .wrapper .hero section .title .description {
     font-size: 1.2rem;
     margin-top: -210px;
-    margin-left: 22px;
+    margin-left: 25px;
     display: block;
   }
 }
@@ -181,7 +184,7 @@ body .wrapper .hero section .buttons .button {
   body .wrapper .hero section .buttons .button {
     height: 50px;
     width: 170px;
-    margin: 0px -17px -65px 20px;
+    margin: 0px -17px -65px 22px;
     padding: 10px 0px 0px 0px;
   }
 }
@@ -240,22 +243,23 @@ body .wrapper .hero section .series-wrapper .series .progress-bar {
   width: 250px;
   height: 10px;
   background-color: #333;
-  margin: 15px auto;
+  margin-top: 10px;
+  margin-left: 45px;
   border-radius: 2px;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress1 {
+body .wrapper .hero section .series-wrapper .series .progress-bar #progress1 {
   width: 80%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress2 {
+body .wrapper .hero section .series-wrapper .series .progress-bar #progress2 {
   width: 30%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress3 {
+body .wrapper .hero section .series-wrapper .series .progress-bar #progress3 {
   width: 5%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress4 {
+body .wrapper .hero section .series-wrapper .series .progress-bar #progress4 {
   width: 100%;
 }
-body .wrapper .hero section .series-wrapper .series .progress-bar:hover #progress5 {
+body .wrapper .hero section .series-wrapper .series .progress-bar #progress5 {
   width: 40%;
 }
 body .wrapper .hero section .series-wrapper .series .progress-bar .progress {
