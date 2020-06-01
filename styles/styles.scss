@@ -17,6 +17,9 @@ body {
         background-color: #000000;
         height: 290vh;
         width: 100vw;
+        @media (max-width: $tablet-breakpoint) {
+            min-height: 190vh;
+        }
         .hero {
             background-image: url("../assets/portada.png");
             background-size: cover;
