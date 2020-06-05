@@ -3,6 +3,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
+        variableWidth: true,
         autoplaySpeed: 2000,
         responsive: [
           {
@@ -35,7 +36,21 @@ $(document).ready(function(){
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
 
-navBarToggle.onclick= function() {
+navBarToggle.onclick = function(e) {
+  e.stopPropagation();
+  toggleMenu()
+};
+
+mainNav.onclick= function (e) {
+  e.stopPropagation();
+}
+
+document.body.onclick = function () {
+  mainNav.classList.remove("active");
+}
+
+
+function toggleMenu () {
   console.log("onclik funciona")
   mainNav.classList.toggle("active");
-};
+}
