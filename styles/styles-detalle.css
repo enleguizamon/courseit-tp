@@ -165,7 +165,7 @@ body .wrapper .hero section .click-buttons .buttons .button {
     height: 50px;
     width: 190px;
     margin: 0px -17px -65px -20px;
-    padding: 10px 0px 0px 0px;
+    padding: 13px 0px 0px 0px;
   }
 }
 body .wrapper .hero section .click-buttons .buttons .reproducir {
@@ -268,12 +268,22 @@ body .wrapper .hero section .series-wrapper .series {
   }
 }
 body .wrapper .hero section .series-wrapper .series .serie {
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
 }
 @media (max-width: 600px) {
   body .wrapper .hero section .series-wrapper .series .serie {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
+    height: 150px;
+  }
+}
+body .wrapper .hero section .series-wrapper .series .serie .img-serie {
+  height: 200px;
+}
+@media (max-width: 600px) {
+  body .wrapper .hero section .series-wrapper .series .serie .img-serie {
+    width: 50%;
+    height: 100%;
   }
 }
 body .wrapper .hero section .series-wrapper .series .serie .episode-description {

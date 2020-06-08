@@ -24,7 +24,7 @@ body {
             min-height: 320vh;
         }
         .hero {
-            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11)),
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884), rgba(170, 170, 170, 0.11)), 
                 url("../assets/breakingbad04.png");
             background-size: cover;
             background-position: center;
@@ -162,7 +162,7 @@ body {
                                 height: 50px;
                                 width: 190px;
                                 margin: 0px -17px -65px -20px;
-                                padding: 10px 0px 0px 0px;
+                                padding: 13px 0px 0px 0px;
                             }
                         }
                         .reproducir {
@@ -262,10 +262,18 @@ body {
                         }
 
                         .serie {
-                            margin-right: 20px;
+                            margin-right: 10px;
                             display: flex;
                             @media (max-width: $tablet-breakpoint) {
-                                margin-bottom: 50px;
+                                margin-bottom: 90px;
+                                height: 150px;
+                            }
+                            .img-serie {
+                                height: 200px;
+                                @media (max-width: $tablet-breakpoint) {
+                                width: 50%;
+                                height: 100%;
+                                }
                             }
                             .episode-description {
                                 display: none;
