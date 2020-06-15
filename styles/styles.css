@@ -34,7 +34,7 @@ body .wrapper .hero {
   }
 }
 body .wrapper .hero .header {
-  width: 1440px;
+  min-width: 100%;
   height: 65px;
   background: rgba(0, 0, 0, 0.801218);
   font-style: normal;
@@ -86,11 +86,10 @@ body .wrapper .hero .header .links.active {
     margin-left: -50px;
   }
 }
-@media (max-width: 890px) {
+@media (max-width: 905px) {
   body .wrapper .hero .header .links {
     flex-direction: column;
-    align-items: flex-start;
-    height: 700px;
+    height: 100vh;
     background-color: black;
     margin: 65px 0px 0px -321px;
     padding: 0px 0px 0px 5px;
@@ -106,7 +105,7 @@ body .wrapper .hero .header .links .link-wrapper .link {
   display: inline-block;
   padding: 10px;
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 905px) {
   body .wrapper .hero .header .links .link-wrapper .link {
     margin-top: 30px;
   }
@@ -114,7 +113,7 @@ body .wrapper .hero .header .links .link-wrapper .link {
 body .wrapper .hero .header .links .link-wrapper .link:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 905px) {
   body .wrapper .hero .header .links .link-wrapper .link.mq {
     font-weight: lighter;
   }
@@ -143,10 +142,7 @@ body .wrapper .hero section .title {
 }
 @media (max-width: 600px) {
   body .wrapper .hero section .title {
-    width: 4000px;
     height: 100px;
-    left: 13px;
-    top: 123px;
   }
 }
 body .wrapper .hero section .title .black-summer {
@@ -249,7 +245,7 @@ body .wrapper .hero section .series-wrapper .series .progress-bar {
   height: 10px;
   background-color: #333;
   margin-top: 10px;
-  margin-left: 45px;
+  margin-left: 60px;
   border-radius: 2px;
 }
 body .wrapper .hero section .series-wrapper .series .progress-bar #progress1 {

@@ -33,7 +33,7 @@ body {
             }
 
             .header {
-                width: 1440px;
+                min-width: 100%;
                 height: 65px;
                 background: rgba(0, 0, 0, 0.801218);
                 font-style: normal;
@@ -79,10 +79,9 @@ body {
                     @media (max-width: 990px) {
                         margin-left: -50px;
                     }
-                    @media (max-width: 890px) {
+                    @media (max-width: 905px) {
                         flex-direction: column;
-                        align-items: flex-start;
-                        height: 700px;
+                        height: 100vh;
                         background-color: black;
                         margin: 65px 0px 0px -321px;
                         padding: 0px 0px 0px 5px;
@@ -96,18 +95,17 @@ body {
                         .link {
                             display: inline-block;
                             padding: 10px;
-                            @media screen and (max-width: 890px) {
+                            @media screen and (max-width: 905px) {
                                 margin-top: 30px;
                             }
                             &:hover {
                                 background-color: rgba(0, 0, 0, 0.3);
                             }
                             &.mq {
-                                @media screen and (max-width: 890px) {
+                                @media screen and (max-width: 905px) {
                                     font-weight: lighter;
                                 }
-                        }
-                       
+                            }
                         }
                     }
                 }
@@ -133,10 +131,7 @@ body {
                     left: 74px;
                     top: 263px;
                     @media (max-width: $tablet-breakpoint) {
-                        width: 4000px;
                         height: 100px;
-                        left: 13px;
-                        top: 123px;
                     }
                     .black-summer {
                         font-style: normal;
@@ -233,21 +228,21 @@ body {
                             margin-top: 10px;
                             margin-left: 60px;
                             border-radius: 2px;
-                                #progress1 {
-                                    width: 80%;
-                                }
-                                #progress2 {
-                                    width: 30%;
-                                }
-                                #progress3 {
-                                    width: 5%;
-                                }
-                                #progress4 {
-                                    width: 100%;
-                                }
-                                #progress5 {
-                                    width: 40%;
-                                }
+                            #progress1 {
+                                width: 80%;
+                            }
+                            #progress2 {
+                                width: 30%;
+                            }
+                            #progress3 {
+                                width: 5%;
+                            }
+                            #progress4 {
+                                width: 100%;
+                            }
+                            #progress5 {
+                                width: 40%;
+                            }
                             .progress {
                                 width: 0;
                                 height: 100%;
