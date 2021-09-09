@@ -1,5 +1,3 @@
-//esta es una prueba de PR
-
 $(document).ready(function () {
   $(".series").slick({
     slidesToShow: 3,
